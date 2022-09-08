@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Escreve alguma coisa aí cada um do grupo quando fizer sua feature - DUARTE Gabriel. (FRASE TESTE HOTFIX)
+=======
+Escreve alguma coisa aí cada um do grupo quando fizer sua feature - DUARTE Gabriel.
+>>>>>>> 6b30867025f7820927cbb579e0ae41f13fb2fc77
