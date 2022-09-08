@@ -1,79 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Formulário do Grupo</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h2>Criar uma conta TEX</h2>
-      </div>
+<html lang="pt-br">
 
-      <form id="form" class="form">
-        <div class="form-control">
-          <label for="username">Samuel Guilherme (Grupo 01)</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Digite seu nome de usuário..."
-          />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/index.css">
 
-        <div class="form-control">
-          <label for="email">Digite seu email</label>
-          <input type="text" id="email" placeholder="Digite seu email.." />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </div>
+</head>
 
-        <div class="form-control">
-          <label for="password">Senha</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Digite sua senha..."
-          />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </div>
-
-        <div class="form-control">
-          <label for="password-confirmation">Enviar Lucas</label>
-          <input
-            type="password"
-            id="password-confirmation"
-            placeholder="Digite sua senha novamente..."
-          />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
-        </div>
-
-        <button type="submit">Enviar Leonardo Franco 01</button>
-      </form>
+<body>
+    <!--verificar depois-->
+    <div class="box">
+        <fieldset>
+            <legend><b>Pessoa Física</b></legend>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                <label for="cpf" class="labelInput">CPF: </label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome Completo: </label>
+            </div>
+            <br>
+            <label for="dataNascimento"><b>Data de Nascimento:</b></label>
+            <input type="date" name="dataNascimento" id="dataNascimento" required>
+            <br><br>
+            <p>Sexo:</p>
+            <input type="radio" name="genero" id="feminino" value="feminino" required>
+            <label for="feminino">Feminino</label><br>
+            <input type="radio" name="genero" id="masculino" value="masculino" required>
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" name="genero" id="outro" value="outro" required>
+            <label for="outro">Outro</label>
+            <br><br>
+            <div class="inputBox">
+                <input type="text" name="nacionalidade" id="nacionalidade" class="inputUser" required>
+                <label for="nacionalidade" class="labelInput">Nacionalidade</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="naturalidade" id="naturalidade" class="inputUser" required>
+                <label for="naturalidade" class="labelInput">Naturalidade</label>
+            </div>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                <label for="endereco" class="labelInput">Endereço</label>
+            </div>
+            <br>
+            <!--verificar depois-->
+            <button type="submit" name="cadastrar" id="cadastrar "><b>Cadastrar</b></button>
+            <button type="submit" name="pesquisar" id="pesquisar "><a href="search.html"><b>Pesquisar</b></a></button>
+        </fieldset>
     </div>
+    <script>
+    </script>
 
-    <script
-      src="https://kit.fontawesome.com/f9e19193d6.js"
-      crossorigin="anonymous"
-    ></script>
+</body>
 
-    <script src="./scripts.js"></script>
-    
-  </body>
 </html>

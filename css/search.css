@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #008cff, #92FE9D);
+    color: whitesmoke;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 20px;
+    width: 50vh;    
+}
+fieldset{
+    border: 3px solid #008cff;
+    border-radius: 10px;
+}
+legend{
+    border:1px, solid #008cff;
+    padding: 10px;
+    text-align: center;
+    background-color: #008cff;
+    border-radius: 5px;
+}
+.inputbox{
+    position: relative; 
+}
+.inputUser{    
+    background: none;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    color: whitesmoke;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{    
+    position: relative;
+    top: -20px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    padding-left: 10px;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -40px;
+    color: #008cff;
+    font-size: 12px;
+}
+p{
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+#dataNascimento{
+    margin-left: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+button{
+    background-image: linear-gradient(to right, #008cff, #92FE9D);
+    width: 80%;
+    border: none;
+    padding: 10px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background-image: linear-gradient(to right, #89fc93, #0385f0);
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    outline: none;
+}
+/*animação*/
+/* aparição do formulário */
+fieldset{    
+    animation: move 600ms;    
+}
+
+input,  p  {
+    animation: move 600ms;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
+}
+label{
+    animation: move 600ms;
+    animation-delay: 200ms;
+    animation-fill-mode: backwards;
+}
+ 
+#cadastrar {
+    animation: move 900ms;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes move{
+    from{
+        opacity: 0; 
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
