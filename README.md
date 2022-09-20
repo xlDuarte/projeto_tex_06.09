@@ -12,3 +12,6 @@
 Eu vim aqui escrever coisas aleatorias nesse README só pra aula de 06/09/2022 da TEX!
 
 JAVA > All!
+
+Projeto cupom pay
+https://www.notion.so/TEX-GRUPO-dbdc0eaaa97c48f6b07e520cf49791bf
